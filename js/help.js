@@ -4,5 +4,10 @@ const connectionTegInHtml = (...name) => {
         obj[element] = document.querySelector("."+element);
     });
     console.log(obj)
-   return obj;
+    return obj;
 }
+
+let Newid = 0
+let crreateNewId = () => Newid++;
+
+
