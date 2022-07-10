@@ -17,6 +17,12 @@ header {
     }
 }
 
+.body .active {
+    box-shadow: 0px 0px 20px 14px #eeff00;
+}
+
+//  choiceElem.html - Choice elem 
+
 img.img {
     width: 50%;
     display: block;
@@ -53,6 +59,29 @@ div{
     }    
 }
 
-.body .active {
-    box-shadow: 0px 0px 20px 14px #eeff00;
+// findText.html - Find Text 
+
+input.inputSearch {
+    width: 50%;
+    margin: 20px auto;
+    display: block;
+    height: 40px;
+    line-height: 33px;
+    font-size: 28px;
+    border: none;
+    box-shadow: 4px 10px 7px #b0b0b0;
+    color: #0389d4;
+    padding: 0 10px;
+    box-sizing: border-box;
+    &:focus-visible {
+        outline: none;
+    } 
+}
+
+.mainBlock {
+    > div {
+        font-size: 30px;
+        text-shadow: 3px 0px 5px #000000;
+        color: white;
+    }
 }

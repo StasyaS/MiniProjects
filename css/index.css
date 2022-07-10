@@ -15,6 +15,9 @@ header a {
   margin: 0 30px;
   text-decoration: none;
 }
+.body .active {
+  box-shadow: 0px 0px 20px 14px #eeff00;
+}
 img.img {
   width: 50%;
   display: block;
@@ -46,6 +49,24 @@ div.text_slide {
   border-radius: 50%;
   box-shadow: 9px 6px 10px 0px #585858;
 }
-.body .active {
-  box-shadow: 0px 0px 20px 14px #eeff00;
+input.inputSearch {
+  width: 50%;
+  margin: 20px auto;
+  display: block;
+  height: 40px;
+  line-height: 33px;
+  font-size: 28px;
+  border: none;
+  box-shadow: 4px 10px 7px #b0b0b0;
+  color: #0389d4;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+input.inputSearch:focus-visible {
+  outline: none;
+}
+.mainBlock > div {
+  font-size: 30px;
+  text-shadow: 3px 0px 5px #000000;
+  color: white;
 }
