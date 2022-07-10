@@ -11,8 +11,6 @@ const person = [
     { value: "Passport", id:'', packed: true, filter: false},
     { value: "Sandwich", id:'', packed: true, filter: false}
   ];
-  
-
         
   const ObjItems = [
     {
@@ -112,3 +110,6 @@ const person = [
         price: 105
     },
 ];
+
+
+
