@@ -1,5 +1,5 @@
 const H = connectionTegInHtml("buttons", "listItems", "C_cont"); //1
-
+// H.listItems = "";
 const allPain = (value) => {
     H.listItems.innerHTML = "";
 
@@ -28,11 +28,13 @@ H.buttons.addEventListener("click", function (e) {
 let count = 0;
 
 function createMenu() {
-
     for(let i = 0; i <= 1; i++){
         if(ObjItems[count] == undefined) break;
         createItem(ObjItems[count]);
         count += 1;
+    }
+    if (ObjItems[count] == undefined) {
+        changeButton();
     }
     // ObjItems.forEach((elem, i) => {
     //     if (i <=1 ) {
@@ -46,6 +48,21 @@ function createMenu() {
 }
 
 
+const clearList = () => {
+    const b = document.querySelector('.butMore')
+    H.listItems.innerHTML = "";
+    b.innerHTML="Down to bottom";
+    count = 0
+    createMenu();
+    b.onclick = createMenu;
+}
+
+
+const changeButton = () => {
+    const b = document.querySelector('.butMore');
+    b.innerHTML="UP to top";
+    b.onclick = clearList;
+}
 
 const buttonBlock = () => {
     const b = document.querySelector('.butMore')
@@ -54,7 +71,8 @@ const buttonBlock = () => {
     more.value = "more";
     more.classList.add('butMore')
     more.innerHTML="more";
-    more.addEventListener("click", createMenu);
+    // more.addEventListener("click", createMenu);
+    more.onclick = createMenu;
     H.C_cont.appendChild(more);          
 }
 
@@ -77,12 +95,31 @@ const deletebuttonBlock = () => {
     dB.remove();
 }
 
-
 const start = () => {
     createMenu(); //2
     buttonBlock()  
    
 }
-start()
-//! HW  git ;
-//! add CSS
+start();
+
+
+
+
+
+
+// const q = () => {
+//     console.log(2);
+//  r()
+// }
+
+// const s = () => {
+//     console.log(3);
+//     // setTimeout(q,20)
+// }
+
+// s() /// 108
+
+// const r = () => {
+//     console.log(1);
+// }
+
