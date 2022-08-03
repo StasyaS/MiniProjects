@@ -22,14 +22,6 @@ const person = [
         price: 20
     },
     {
-        name: "Каша1",
-        photo: './i/im1.jpg',
-        _id: crreateNewId(),
-        text: "I write it down now 1 ",
-        value: 1,
-        price: 20
-    },
-    {
         name: "Cалат",
         photo: './i/im2.jpg',
         _id: crreateNewId(),
