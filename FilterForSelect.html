@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>       
+    <header>
+        <a href="./findText.html">Find Text</a>
+        <a href="./bigSlider.html">Big Slider</a>
+        <a href="./choiceElem.html">Choice elem</a>
+        <a href="./allFilters.html">All Filters</a>
+        <a href="./FilterForSelect.html">FilterForSelect</a>
+    </header> 
+    <!-- Err -->
+  
+    <button class="selector" value="-1"> 
+        <div class="choose">All</div>
+        <div class="selectForm">
+            <div slot="-1">All</div>
+            <div slot="0">Soups</div>
+            <div slot="1">Garnir</div>
+            <div slot="2">Potatos</div>
+        </div>
+    </button>
+
+    <button class="selector" value="-1">
+        <div class="choose">Price</div>
+        <!-- <div class="choose_pr">Price</div> -->
+        <!-- <div class="selectForm_pr"> -->
+        <div class="selectForm">
+            <div slot="-1">All</div>
+            <div slot="35">35</div>
+            <div slot="60">60</div>
+            <div slot="90">90</div>
+        </div>
+    </button>
+
+    <div class="images"></div>
+
+
+  <!-- value - button select a input  -->
+
+
+    <script src="js/help.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/FilterForSelect.js"></script>
+    
+</body>
+</html>

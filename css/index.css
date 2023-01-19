@@ -125,3 +125,64 @@ input.inputSearch:focus-visible {
   border-radius: 20%;
   box-shadow: 9px 6px 10px 0px #585858;
 }
+.selector {
+  background-color: #ffff00;
+  font-size: 22px;
+  line-height: 24px;
+  color: #02456c;
+  font-weight: 700;
+  width: 50%;
+  max-width: 300px;
+  text-align: center;
+  margin: 20px auto 0 auto;
+}
+.selector:focus {
+  background-color: #ffeb3b;
+}
+.selector .selectForm {
+  margin: 20px auto 0 auto;
+  width: 100%;
+  display: none;
+  text-align: center;
+}
+.selector .selectForm.active {
+  display: block;
+}
+.selector .selectForm a {
+  display: block;
+  border: none;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+.selector_pr {
+  background-color: #ffff00;
+  font-size: 22px;
+  line-height: 24px;
+  color: #02456c;
+  font-weight: 700;
+  width: 50%;
+  max-width: 300px;
+  text-align: center;
+  margin: 20px auto 0 auto;
+}
+.selector_pr:focus {
+  background-color: #ffeb3b;
+}
+.selector_pr .selectForm_pr {
+  margin: 20px auto 0 auto;
+  width: 100%;
+  display: none;
+  text-align: center;
+}
+.selector_pr .selectForm_pr.active {
+  display: block;
+}
+.selector_pr .selectForm_pr a {
+  display: block;
+  border: none;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+.bg {
+  background-color: red;
+}

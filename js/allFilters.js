@@ -29,8 +29,8 @@ let count = 0;
 
 function createMenu() {
     for(let i = 0; i <= 1; i++){
-        if(ObjItems[count] == undefined) break;
-        createItem(ObjItems[count]);
+        if(ObjItems[i] == undefined) break;
+        createItem(ObjItems[i]);
         count += 1;
     }
     if (ObjItems[count] == undefined) {
@@ -122,4 +122,37 @@ start();
 // const r = () => {
 //     console.log(1);
 // }
+
+document.querySelector('body').setHTML('');
+const targetDiv = document.createElement('div');
+var items = [
+    {'color': 'blue', type:'blues'},
+    {'color': 'light blue', type:'blues'},
+    {'color': 'red', type:'reds'},
+    {'color': 'light red', type:'reds'},
+    {'color': 'yellow', type:'yellows'},
+    {'color': 'green', type:'greens'}
+];
+
+items.forEach((current) => {
+    if (document.querySelectorAll('button[value="' + current.type + '"]').length == 0){
+        const button = document.createElement('button');
+        button.value = current.type;
+        document.querySelector('body').appendChild(button);
+        button.innerText = current.type;
+    }
+});
+document.querySelector('body').appendChild(targetDiv);       
+
+
+document.querySelectorAll('button').forEach(currentButton => {
+    currentButton.onclick = function(event){
+        targetDiv.setHTML('');
+        console.log(items.filter(obj => obj.type == event.srcElement.value));
+        items.filter(obj => obj.type == event.srcElement.value).forEach(currentItem => {
+            targetDiv.setHTML(targetDiv.getInnerHTML() + JSON.stringify(currentItem));
+        });
+        
+    }
+})
 
